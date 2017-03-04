@@ -3,9 +3,11 @@
 Yeoman Generator for creating the scaffolding of an app using Microsoft Bot Framework and Node.js. 
 
 ## Getting started
+- Assume you already have Node.js installed
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
 - Install the generator: `npm install -g generator-botscaffold`
+- Create a directory to hold your bot's code, and cd into it
 - Run: `yo botscaffold`
 
 ## Features
