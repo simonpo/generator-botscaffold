@@ -1,0 +1,30 @@
+{
+  "name": "generator-botscaffold",
+  "version": "0.1.0",
+  "description": "Erect the scaffolding for a Node.js, Microsoft Bot Framework app using Yeoman",
+  "author": "Simon Powell <simon@powell.at> (https://github.com/simonpo)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpo/generator-botscaffold.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "botframework"
+  ],
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonpo/generator-botscaffold/issues"
+  },
+  "homepage": "https://github.com/simonpo/generator-botscaffold#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
