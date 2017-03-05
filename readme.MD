@@ -1,4 +1,4 @@
-# Generator-botcaffold
+# Generator-botscaffold
 
 Yeoman Generator for creating the scaffolding of an app using Microsoft Bot Framework and Node.js. 
 
