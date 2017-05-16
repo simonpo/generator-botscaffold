@@ -17,6 +17,6 @@ This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MI
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* Hat tip to anyone whose code was used
 * Inspiration
 * etc
