@@ -14,7 +14,7 @@ Yeoman Generator for creating the scaffolding of an app using Microsoft Bot Fram
 
 - Scaffolds a Node.js Bot Framework app
 - Creates a launch.json skeleton for easy inclusion of env variables using VS Code
-- Creates a basic readme
+- Creates a basic README.md
 - Builds your package.json
 
 ## Why?
@@ -27,3 +27,7 @@ Feel free to create an Issue. Pull requests are encouraged.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+
+## Acknowledgments
+
+* Hat tip to [PurpleBooth's README-Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)

@@ -63,6 +63,15 @@ module.exports = Generator.extend({
         luisEmbedCode: this.props.luisEmbedCode
       }
     )
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath(this.props['rootPath'] + '/README.md'),
+      { 
+        botname: this.props.botName,
+        botdescription: this.props.botDescription,
+        authorname: this.props.author
+      }
+    )
     this.fs.copy(
       this.templatePath('app.js'),
       this.destinationPath(this.props['rootPath'] + '/app.js')
