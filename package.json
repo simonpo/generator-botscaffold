@@ -16,7 +16,7 @@
   ],
   "main": "generators/index.js",
   "dependencies": {
-    "yeoman-generator": "^1.0.0"
+    "yeoman-generator": "^1.0.1"
   },
   "license": "MIT",
   "bugs": {

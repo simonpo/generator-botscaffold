@@ -1,4 +1,9 @@
 var Generator = require('yeoman-generator');
+var welcome = 
+'\nHi there!\n' +
+'\nAnswer a few questions below, and I\'ll scaffold a new Bot Framework Node.js app'   +
+'\nall set up for you. \n';
+console.log(welcome);
 
 module.exports = Generator.extend({
   prompting: function () {
@@ -54,7 +59,7 @@ module.exports = Generator.extend({
       this.templatePath('index.html'),
       this.destinationPath(this.props['rootPath'] + '/index.html'),
       { 
-        botname: this.props.botname,
+        botname: this.props.botName,
         luisEmbedCode: this.props.luisEmbedCode
       }
     )
@@ -79,10 +84,10 @@ module.exports = Generator.extend({
       this.templatePath('_package.json'),
       this.destinationPath(this.props['rootPath'] + '/package.json'),
       {
-          botname: this.props.botname,
+          botname: this.props.botName,
           botdescription: this.props.botDescription, 
           authorname: this.props.author,
-          authoremail: this.props.authoremail
+          authoremail: this.props.authorEmail
     }
     );
   },
