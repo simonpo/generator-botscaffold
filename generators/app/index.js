@@ -2,7 +2,7 @@ var Generator = require('yeoman-generator');
 var welcome = 
 '\nHi there!\n' +
 '\nAnswer a few questions below, and I\'ll scaffold a new Bot Framework Node.js app'   +
-'\nall set up for you. \n';
+'\nTake a look at the SetupGuide on https://github.com/simonpo/generator-botscaffold/ if you need help. \n';
 console.log(welcome);
 
 module.exports = Generator.extend({
@@ -30,11 +30,11 @@ module.exports = Generator.extend({
       }, {
           type    : String,
           name    : 'botAppId',
-          message : 'Enter your bot ID here, if you have one',
+          message : 'Enter your App ID',
       }, {
           type    : String,
           name    : 'botAppPwd',
-          message : 'Enter your bot password here, if you have one',
+          message : 'Enter your App Password',
       }, {
           type    : String,
           name    : 'luisEndpoint',
