@@ -1,6 +1,6 @@
 # TL;DR Setup Guide #
 
-The [complete Setup Guide](SetupGuide.md) is quite long. If you've used Azure services before, here's a condensed version of that Guide to get you going more quickly: 
+The [complete Setup Guide](SetupGuide.md) is quite long, and unfortunately not complete yet. If you've used Azure services before, here's a condensed version of that Guide to get you going more quickly: 
 
 - Create a Web App in Azure to host your Bot
 - Create a Bot at botframework.com
@@ -14,18 +14,18 @@ The [complete Setup Guide](SetupGuide.md) is quite long. If you've used Azure se
 
 ## Create a Web App in Azure to host your Bot ##
 - As you're creating the web app, choose **On** for **App Insights**
-- Copy/paste your **Web App URL** into a text file
+- Copy/paste your **Web App URL** into the text file, and save it (OUTSIDE your code directory).
 - Change the protocol to **https**, and add **/api/messages** to the end of the URL.
 - Save this info, it will be your Bot's messaging endpoint
 
 ## Create a Bot at botframework.com ##
 - Go to [https://dev.botframework.com](https://dev.botframework.com) and sign in
 - Create a new Bot under **My Bots**
-- 
+- Copy/paste your **App Password** and **App ID** into the text file, and save it.
 
 ## Configure App Insights on the Azure portal ##
 - On the Azure portal, configure **App Insights**
-- Paste the **App Insights Instrumentation Key** into a text file and save it somewhere safe. 
+- Paste the **App Insights Instrumentation Key** into the text file, and save it.
 
 ## Create a LUIS instance ##
 - Go to [https://luis.ai](https://luis.ai/) and sign in
@@ -68,13 +68,13 @@ git push -u origin master
 ```
 
 ## Configure the Web App to pull your code from GitHub ##
-In the Azure portal, select the **Deployment Options** tab
-Choose **GitHub** as your source, and enter the required settings.
-Any change you push to GitHub will now automatically deploy to Azure
+- In the Azure portal, select the **Deployment Options** tab
+- Choose **GitHub** as your source, and enter the required settings.
+- Any change you push to GitHub will now automatically deploy to Azure
 
 ## Test your Bot running on Azure ##
-Open the **Bot Framework Emulator**
-Enter your Azure messaging endpoint, **App ID** and **App Password** and begin testing
+- Open the **Bot Framework Emulator**
+- Enter your Azure messaging endpoint, **App ID** and **App Password** and begin testing
 
 ## Connect your Bot to additional channels ##
-Now your Bot is up and running, return to [https://dev.botframework.com](https://dev.botframework.com) and configure more channels for it to talk on. 
+- Now your Bot is up and running, return to [https://dev.botframework.com](https://dev.botframework.com) and configure more channels for it to talk on. 

@@ -4,7 +4,7 @@ This Yeoman Generator creates the scaffolding of a Node.js app leveraging the [M
 
 [//]: # "You will need to provide pointers to some Azure services during the setup process, so look at the [comprehensive Setup Guide](./SetupGuide.md) as you walk through the generator. That document is long with screen-shots, so if you're familiar with Azure try the [TL;DR version](./TLDRGuide.md) version - it's much shorter."
 
-You will need to provide pointers to some Azure services during the setup process, so look at theshort version of the [Setup Guide](./TLDRGuide.md) - longer version with screen-shots coming soon.
+You will need to provide pointers to some Azure services during the setup process, so look at the short version of the [Setup Guide](./TLDRGuide.md) - longer version with screen-shots coming soon.
 
 ## Features
 This app delivers the skeleton of a bot, and includes the following:
