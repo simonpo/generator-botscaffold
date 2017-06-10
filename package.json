@@ -1,6 +1,6 @@
 {
   "name": "generator-botscaffold",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Erect the scaffolding for a Node.js, Microsoft Bot Framework app using Yeoman",
   "author": "Simon Powell <simon@powell.at> (https://github.com/simonpo)",
   "repository": {
