@@ -1,6 +1,6 @@
 # TL;DR Setup Guide #
 
-The [complete Setup Guide](SetupGuide.md) is quite long, and unfortunately not complete yet. If you've used Azure services before, here's a condensed version of that Guide to get you going more quickly: 
+The [complete Setup Guide](SetupGuide.md) is long and image heavy: if you've used Azure services before, this condensed guide to the Botscaffold generator will get you going more quickly. In summary, it will show you how to
 
 - Create a Web App in Azure to host your Bot
 - Create a Bot at botframework.com
@@ -11,6 +11,7 @@ The [complete Setup Guide](SetupGuide.md) is quite long, and unfortunately not c
 - Configure the Web App to pull your code from GitHub
 
 ## Sign into Azure ##
+- [https://portal.azure.com](https://portal.azure.com)
 
 ## Create a Web App in Azure to host your Bot ##
 - As you're creating the web app, choose **On** for **App Insights**
@@ -21,6 +22,7 @@ The [complete Setup Guide](SetupGuide.md) is quite long, and unfortunately not c
 ## Create a Bot at botframework.com ##
 - Go to [https://dev.botframework.com](https://dev.botframework.com) and sign in
 - Create a new Bot under **My Bots**
+- Fill in the form to create your Bot
 - Copy/paste your **App Password** and **App ID** into the text file, and save it.
 
 ## Configure App Insights on the Azure portal ##

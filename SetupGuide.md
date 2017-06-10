@@ -60,6 +60,79 @@ Once you've generated the key, copy and paste the Application ID and API Key int
 
 ![Create Bot](assets/BotframeworkCreateBot-3.png)
 
+You now have the third piece of information you need to answer the Botscaffold generator's questions: paste the **AppInsights Instrumentation Key** into the generator when prompted.
+
 Congratulations - you've completed the first step of the process. Next, we'll set up LUIS so your bot can have an intelligent conversation. 
 
-### Enter your App ID / Enter your App Password
+### Enter your LUIS endpoint / LUIS embed code ###
+
+In another new browser window, sign in at [https://luis.ai](https://luis.ai) and select the **New App** option. A pop-up will ask you for the name 
+
+![Create LUIS](assets/LUISsetup-1.png)
+
+Your new LUIS app will be created, and your Dashboard displayed. Next, you will need to create three sample Intents named as follows:
+
+- Greeting
+- Help
+- AboutTheBot
+
+Follow the instructions in LUIS to create these Intents and their associated utterances, like this:
+
+![Create Intents](assets/LUISsetup-2.png)
+
+Once all three Intents are created, select **Train and Test** from the left menu, select **Train your Application**, and then test your model following the instructions on the screen
+
+![Create Intents](assets/LUISTrainTest-1.png)
+
+When you're happy with your Intents and the test results, select **Publish** from the left menu, and complete the required information on the form
+
+![Create Intents](assets/LUISPublish-1.png)
+
+From this screen, you can copy the **Endpoint Key** and **Endpoint URL** and enter them into the Botscaffold generator. 
+
+Finally, Botscaffold will ask you to confirm the directory where you'd like to save your files.  The generator will now build the framework of the Bot for you. 
+
+### Upload your Bot to GitHub ###
+
+GitHub provides and extremely convenient mechanism both for managing your source code, and deploying your Bot's code to your Azure Web Service. First, we'll need to upload your code to GitHub. 
+
+- Sign in at [github.com](https://github.com)
+- Create a new repo
+- From the local directory containing your code, enter these commands: 
+
+```
+git init
+git add .
+git commit -m "first commit"
+git remote add origin <your git repo url>
+git push -u origin master
+```
+Your Bot code will be deployed to GitHub, and you will be able to sync future changes through the usual `git` process.
+
+### Set Environment Variables in Azure ###
+
+Before you upload your bot to your Azure Web Service for testing, you should configure Environment Variables, where you can store the app-specific details that you don't want to store in your source code. 
+
+Return to the [Azure Portal]((https://portal.azure.com), navigate to your Web App, and from the **Application Settings** tab, enter the following Key/Value pairs under the APPINSIGHTS_INSTRUMENTATIONKEY that has already been created:
+
+- MY_APP_ID
+- MY_APP_PASSWORD
+- MY_LUIS_MODEL 
+
+![App Settings](assets/AzureAppSettings-1.png)
+
+You can find the correct values in your .vscode\launch.json file, if you need. 
+
+Next, configure your Web App to pull it's source code directly from GitHub. Select **Deployment Options** from the navigation menu, select **GitHub** from the list of source providers, and configure your login details, repo, and branch as appropriate
+
+![GitHub deployment](assets/AzureGitHubDeploy.png)
+
+Your package will be pulled from GitHub into Azure automatically, and will automatically update when you push changes from your local repo up to GitHub in future. The Azure Web App will automatically be deployed to Azure once synchronised, and your bot code is now running in Azure. Congratulations!
+
+### Testing your Bot with the Bot Framework Emulator ### 
+
+To check that all is well, open the **Bot Framework Emulator** that you installed earlier. At the top of the screen, enter the URL of your **Messaging Endpoint**, your **App ID** and your **App Secret**. 
+
+Press the **Connect** button, and begin a conversation with your Bot. You'll see debug information displayed in the Details and Log windows on the right.  
+
+

@@ -1,10 +1,10 @@
 # Generator-botscaffold
 
+[![npm version](https://badge.fury.io/js/generator-botscaffold.svg)](https://badge.fury.io/js/generator-botscaffold)
+
 This Yeoman Generator creates the scaffolding of a Node.js app leveraging the [Microsoft Bot Framework](https://dev.botframework.com/), [LUIS](https://www.luis.ai/) and [Application Insights](https://azure.microsoft.com/services/application-insights/), helping you focus on delivering a great conversational experience rather than the setup process. 
 
-[//]: # "You will need to provide pointers to some Azure services during the setup process, so look at the [comprehensive Setup Guide](./SetupGuide.md) as you walk through the generator. That document is long with screen-shots, so if you're familiar with Azure try the [TL;DR version](./TLDRGuide.md) version - it's much shorter."
-
-You will need to provide pointers to some Azure services during the setup process, so look at the short version of the [Setup Guide](./TLDRGuide.md) - longer version with screen-shots coming soon.
+You will need to provide pointers to some Azure services during the setup process, so look at the [comprehensive Setup Guide](./SetupGuide.md) as you walk through the generator. That document is long with screen-shots, so if you're familiar with Azure try the [TL;DR version](./TLDRGuide.md) version - it's much shorter.
 
 ## Features
 This app delivers the skeleton of a bot, and includes the following:
