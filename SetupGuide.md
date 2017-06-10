@@ -22,7 +22,7 @@ Select **Web + Mobile**, then choose **Web App**.
 
 ![Create Web App](assets/AzureCreateWebApp-1.png) 
 
-Fill out the form to create the Web App, entering a new **App name**, selecting a **Subscription**, and choosing either a new or existing **Resource Group**. Select an **App Service Plan/Location** either close to you, or to where most users of your Bot will be. Finally, choose whether to enable **Application Insights** (recommended).
+Fill out the form to create the Web App, entering a new **App name**, selecting a **Subscription**, and choosing either a new or existing **Resource Group**. Select an **App Service Plan/Location** either close to you, or to where most users of your Bot will be. Finally, choose to enable **Application Insights** (required for this version of the Botscaffold generator).
 
 ![Create Web App](assets/AzureCreateWebApp-2.png) 
 

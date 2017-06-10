@@ -1,24 +1,32 @@
 # Generator-botscaffold
 
-This Yeoman Generator creates the scaffolding of a Node.js app leveraging the [Microsoft Bot Framework](https://dev.botframework.com/) and [LUIS](https://www.luis.ai/), helping you focus on delivering a great conversational experience rather than the setup process. 
+This Yeoman Generator creates the scaffolding of a Node.js app leveraging the [Microsoft Bot Framework](https://dev.botframework.com/), [LUIS](https://www.luis.ai/) and [Application Insights](https://azure.microsoft.com/services/application-insights/), helping you focus on delivering a great conversational experience rather than the setup process. 
 
-You will need to provide pointers to some Azure services during the setup process, so take a look at the [Setup Guide](./SetupGuide.md) as you walk through the generator.
+You will need to provide pointers to some Azure services during the setup process, so look at the [comprehensive Setup Guide](./SetupGuide.md) as you walk through the generator. That document is long with screen-shots, so if you're familiar with Azure try the [TL;DR version](./TLDRGuide.md) version - it's much shorter. 
 
 ## Features
+This app delivers the skeleton of a bot, and includes the following:
 
-- Scaffolds a Node.js Bot Framework app
-- Creates a launch.json skeleton for easy inclusion of environment variables using VS Code
-- Creates a basic README.md
-- Builds your package.json
+- a .gitignore, preventing sensitive data (contained in .vscode\launch.json) being published to a public repo
+- a .vscode\launch.json file containing your keys and passwords as environment variables, so you can run your bot locally
+- a package.json with all the requirements for Bot Framework, LUIS and Application Insights
+- an app.js Bot you can run locally in VS Code or remotely as an Azure Web App
 
 ## Getting started
-- Assume you already have Node.js v4.0.x or better installed
-- Make sure you have [yo](https://github.com/yeoman/yo) installed:
+You will need:
+
+- [VS Code](https://code.visualstudio.com/docs/setup/setup-overview) installed to edit the app.js, and run the Bot locally in debug mode. It's available for Windows, Mac and Linux
+- The [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator)
+- [Node.js v4.0.x](https://nodejs.org/en/download/) or better
+- [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
-- Install the generator: `npm install -g generator-botscaffold`
+
+## Running the Generator
+- Install the botscaffold generator: `npm install -g generator-botscaffold`
 - Create a directory to hold your bot's code, and cd into it
 - Run: `yo botscaffold`
-- Follow along in the [Setup Guide](./SetupGuide.md)
+- Follow along in the [Setup Guide](./SetupGuide.md) or the [TL;DR version](./TLDRGuide.md) version
+- Test your Bot with the [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator)
 
 ## Why?
 
