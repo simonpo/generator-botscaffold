@@ -15,6 +15,7 @@
                 "NODE_ENV": "development",
                 "MY_APP_ID": "<%= botAppId %>",
                 "MY_APP_PASSWORD": "<%= botAppPwd %>",
+                "APPINSIGHTS_INSTRUMENTATIONKEY": "<% botAppInsight %>",
                 "MY_LUIS_MODEL": "<%= luisEndpoint %>"
             }
         },

@@ -2,7 +2,11 @@
 // Set up requirements
 var restify = require('restify'); 
 var builder = require('botbuilder'); 
-const util = require('util');
+const appInsights = require("applicationinsights");
+
+// Get App Insights going
+appInsights.setup();
+appInsights.start();
 
 // Setup Restify Server
 var server = restify.createServer();

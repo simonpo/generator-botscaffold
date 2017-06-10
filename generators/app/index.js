@@ -37,6 +37,10 @@ module.exports = Generator.extend({
           message : 'Enter your App Password',
       }, {
           type    : String,
+          name    : 'botAppInsightsInstrumentationKey',
+          message : 'Enter your App Insights Instrumentation Key',
+      }, {
+          type    : String,
           name    : 'luisEndpoint',
           message : 'Enter your LUIS endpoint, if you have one',
       },  {
@@ -86,6 +90,7 @@ module.exports = Generator.extend({
       {
         botAppId: this.props.botAppId,
         botAppPwd: this.props.botAppPwd,
+        botAppInsight: this.props.botAppInsightsInstrumentationKey,
         luisEndpoint: this.props.luisEndpoint
       }
     );

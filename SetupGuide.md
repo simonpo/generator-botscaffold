@@ -32,7 +32,7 @@ Your app will be created and validated, and you will be returned to the Azure Da
 
 Take note of the URL highlighted with the red box above, you'll need this shortly. 
 
-In a new browser window, go to the [https://dev.botframework.com/]!(https://dev.botframework.com/), sign in, click the **My bots** link on the homepage navigation bar, and select the **Create a bot** button. Here, we're going to create and register a new bot, and gather the information we need to put into the **Botscaffold** generator. You will need to refer to information from the Web App you created on the Azure Portal to create your bot. 
+In a new browser window, go to ![https://dev.botframework.com/](https://dev.botframework.com/), sign in, click the **My bots** link on the homepage navigation bar, and select the **Create a bot** button. Here, we're going to create and register a new bot, and gather the information we need to put into the **Botscaffold** generator. You will need to refer to information from the Web App you created on the Azure Portal to create your bot. 
 
 Follow the instructions on the **Tell us about your bot** form to create your bot. In the **Configuration** section, use the URL of your Azure Web App to create a messaging endpoint, replacing http:// with https:// and adding /api/messages to the end, like so:
 
@@ -41,6 +41,8 @@ Follow the instructions on the **Tell us about your bot** form to create your bo
 Select the **Create Microsoft App ID and Password** button, and a new browser window will open showing your **App ID** and button to generate a **Password**. Take careful note of the password that is generated, this is the only time you can see it displayed. 
 
 ![Create Web App](assets/BotframeworkCreateBot-2.png)
+
+You now have the first two pieces of information you need to answer the Botscaffold generator's questions - paste the **App ID* and **App Password** into the generator:
 
 
 
