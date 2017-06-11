@@ -27,7 +27,7 @@ You will need:
 - Install the botscaffold generator: `npm install -g generator-botscaffold`
 - Create a directory to hold your bot's code, and cd into it
 - Run: `yo botscaffold`
-- Follow along in the [Setup Guide](./SetupGuide.md) or the [TL;DR version](./TLDRGuide.md) version
+- Follow along in the [Setup Guide](./SetupGuide.md) or the [TL;DR version](./TLDRGuide.md)
 - Test your Bot with the [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator)
 
 ## Why?

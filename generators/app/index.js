@@ -11,12 +11,12 @@ module.exports = Generator.extend({
       {
           type    : String,
           name    : 'botName',
-          message : 'Bot name',
+          message : 'Bot name:',
           default : this.appname //default to current folder name
       }, {
           type    : String,
           name    : 'botDescription',
-          message : 'A one-line description of your Bot'
+          message : 'A one-line description of your Bot:'
       }, {
           type    : String,
           name    : 'author',
@@ -30,23 +30,23 @@ module.exports = Generator.extend({
       }, {
           type    : String,
           name    : 'botAppId',
-          message : 'Enter your App ID',
+          message : 'Enter your App ID:',
       }, {
           type    : String,
           name    : 'botAppPwd',
-          message : 'Enter your App Password',
+          message : 'Enter your App Password:',
       }, {
           type    : String,
           name    : 'botAppInsightsInstrumentationKey',
-          message : 'Enter your App Insights Instrumentation Key',
+          message : 'Enter your AppInsights Instrumentation Key:',
       }, {
           type    : String,
           name    : 'luisEndpoint',
-          message : 'Enter your LUIS endpoint, if you have one',
+          message : 'Enter your LUIS endpoint url:',
       },  {
           type    : String,
           name    : 'luisEmbedCode',
-          message : 'Enter your LUIS embed code, if you have one',
+          message : 'Enter your LUIS embed code:',
       }, {
           type    : String,
           name    : 'rootPath',
