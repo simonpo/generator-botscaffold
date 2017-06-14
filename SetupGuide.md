@@ -100,11 +100,16 @@ Select the **Edit** link next to **Web Chat** and select **Add a new site**. Ent
 
 ![Create Web Chat](assets/WebChat-1.png)
 
-On the following screen, click **Show** to reveal the first hidden key, then copy and paste this value into the bot generator. 
+On the following screen, click **Show** to reveal the first hidden key
 
 ![Create Web Chat](assets/WebChat-2.png)
 
-The generator will use this key to create a complete URL in the index.html file created for you (so, you don't need to paste the whole IFRAME code that the dev portal offers you).
+Use copy and paste to create your Embed code, replacing the text YOUR_SECRET_HERE in the following snippet with your own Secret Key 
+
+```
+<iframe src='https://webchat.botframework.com/embed/YourNewBot?s=YOUR_SECRET_HERE'></iframe>
+```
+Paste the entire iframe string into the Botscaffold generator.
 
 Finally, Botscaffold will ask you to confirm the directory where you'd like to save your files.  The generator will now build the framework of the Bot for you. 
 
