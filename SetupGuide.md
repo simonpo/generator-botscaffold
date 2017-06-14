@@ -94,15 +94,17 @@ After choosing whether you want verbose logging, to use Bing search, and the tim
 
 We're nearly done with setup - you need to obtain a LUIS embed code, which the generator will insert into an HTML file hosted in your Azure Web App to act as a web-based chat client.  
 
-Return to your bot at https://dev.botframework.com/ and select the **CHANNELS** menu option. By default, two channels have been created for you, Skype and Web Chat. Select the **Edit** link next to **Web Chat** and select **Add a new site**. Enter a name for your new site. 
+Return to your bot at https://dev.botframework.com/ and select the **CHANNELS** menu option. By default, two channels have been created for you, Skype and Web Chat. 
+
+Select the **Edit** link next to **Web Chat** and select **Add a new site**. Enter a name for your new site. 
 
 ![Create Web Chat](assets/WebChat-1.png)
 
-On the following screen, click **Show** to reveal the first hidden key, and use it to replace the text **YOUR_SECRET_HERE** in the **Embed Code** textbox. 
+On the following screen, click **Show** to reveal the first hidden key, then copy and paste this value into the bot generator. 
 
 ![Create Web Chat](assets/WebChat-2.png)
 
-Copy the contents of this textbox, and paste it into the generator. 
+The generator will use this key to create a complete URL in the index.html file created for you (so, you don't need to paste the whole IFRAME code that the dev portal offers you).
 
 Finally, Botscaffold will ask you to confirm the directory where you'd like to save your files.  The generator will now build the framework of the Bot for you. 
 
