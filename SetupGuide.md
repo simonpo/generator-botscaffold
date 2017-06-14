@@ -52,7 +52,7 @@ Back on the **Tell us about your bot** page at dev.botframework.com, you can set
 
 ![AppInsights Key](assets/AppInsights-1.png)
 
-You'll need to generate an **AppInsights API key**, so click the **API Key** tab on the menu and then **+ Create API Key**. and follow the instructions to do that. Make sure you copy this key somewhere safe, as it's not stored, and after you close this blade you won't be able to see it again.
+You'll need to generate an **AppInsights API key**, so click the **API Access** tab on the menu and then **+ Create API Key**. and follow the instructions to do that. Make sure you copy this key somewhere safe, as it's not stored, and after you close this blade you won't be able to see it again.
 
 ![AppInsights Key](assets/AppInsights-2.png)
 
@@ -64,7 +64,7 @@ You now have the third piece of information you need to answer the Botscaffold g
 
 Congratulations - you've completed the first step of the process. Next, we'll set up LUIS so your bot can have an intelligent conversation. 
 
-### Enter your LUIS endpoint / LUIS embed code ###
+### Enter your LUIS endpoint ###
 
 In another new browser window, sign in at [https://luis.ai](https://luis.ai) and select the **New App** option. A pop-up will ask you for the name 
 
@@ -88,13 +88,27 @@ When you're happy with your Intents and the test results, select **Publish** fro
 
 ![Create Intents](assets/LUISPublish-1.png)
 
-From this screen, you can copy the **Endpoint Key** and **Endpoint URL** and enter them into the Botscaffold generator. 
+After choosing whether you want verbose logging, to use Bing search, and the timezone you'd like associated with your model, press the Publish button. Once you model is verified and published, you can copy the **Endpoint URL** and enter it into the Botscaffold generator. 
+
+### Enter your LUIS embed code ###
+
+We're nearly done with setup - you need to obtain a LUIS embed code, which the generator will insert into an HTML file hosted in your Azure Web App to act as a web-based chat client.  
+
+Return to your bot at https://dev.botframework.com/ and select the **CHANNELS** menu option. By default, two channels have been created for you, Skype and Web Chat. Select the **Edit** link next to **Web Chat** and select **Add a new site**. Enter a name for your new site. 
+
+![Create Web Chat](assets/WebChat-1.png)
+
+On the following screen, click **Show** to reveal the first hidden key, and use it to replace the text **YOUR_SECRET_HERE** in the **Embed Code** textbox. 
+
+![Create Web Chat](assets/WebChat-2.png)
+
+Copy the contents of this textbox, and paste it into the generator. 
 
 Finally, Botscaffold will ask you to confirm the directory where you'd like to save your files.  The generator will now build the framework of the Bot for you. 
 
 ### Upload your Bot to GitHub ###
 
-GitHub provides and extremely convenient mechanism both for managing your source code, and deploying your Bot's code to your Azure Web Service. First, we'll need to upload your code to GitHub. 
+GitHub provides an extremely convenient mechanism both for managing your source code, and deploying your Bot code to your Azure Web Service. First, we'll need to upload your code to GitHub. 
 
 - Sign in at [github.com](https://github.com)
 - Create a new repo
