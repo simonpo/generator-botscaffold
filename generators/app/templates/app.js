@@ -1,12 +1,12 @@
 // A Microsoft Bot Framework template built by the Yeoman botscaffold generator
-// Set up requirements
-var restify = require('restify'); 
-var builder = require('botbuilder'); 
-const appInsights = require("applicationinsights");
-
 // Get App Insights going
+const appInsights = require("applicationinsights");
 appInsights.setup();
 appInsights.start();
+
+// and other requirements
+var restify = require('restify'); 
+var builder = require('botbuilder'); 
 
 // Setup Restify Server
 var server = restify.createServer();
