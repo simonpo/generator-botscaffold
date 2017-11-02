@@ -5,14 +5,14 @@ appInsights.setup();
 appInsights.start();
 
 // and other requirements
-var restify = require('restify'); 
-var builder = require('botbuilder'); 
+var restify = require('restify');
+var builder = require('botbuilder');
 
 // Setup Restify Server
 var server = restify.createServer();
-server.listen(process.env.PORT || 3978, function() 
+server.listen(process.env.PORT || 3978, function()
 {
-   console.log('%s listening to %s', server.name, server.url); 
+   console.log('%s listening to %s', server.name, server.url);
 });
 
 // Create the bot
@@ -35,7 +35,7 @@ intents.matches('AboutTheBot', builder.DialogAction.send("I'm a chat bot, built 
 intents.onDefault(builder.DialogAction.send("Sorry, but I didn't understand that. Type Help to get some help."));
 
 // web interface
-server.get('/', restify.serveStatic({
+server.get('/', restify.plugins.serveStatic({
  directory: __dirname,
  default: '/index.html',
 }));
