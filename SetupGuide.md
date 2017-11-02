@@ -34,6 +34,10 @@ Take note of the URL highlighted with the red box above, you'll need this shortl
 
 In a new browser window, go to [https://dev.botframework.com/](https://dev.botframework.com/), sign in, click the **My bots** link on the homepage navigation bar, and select the **Create a bot** button. Here, we're going to create and register a new bot, and gather the information we need to put into the **Botscaffold** generator. You will need to refer to information from the Web App you created on the Azure Portal to create your bot. 
 
+Click the **Create** button on the page, then select **Register and existing bot built using Bot Builder SDK**. 
+
+![Create Bot](assets/BotframeworkCreateSDKBot-0.png)
+
 Follow the instructions on the **Tell us about your bot** form to create your bot. In the **Configuration** section, use the URL of your Azure Web App to create a messaging endpoint, replacing http:// with https:// and adding /api/messages to the end, like so:
 
 ![Create Bot](assets/BotframeworkCreateBot-1.png)
@@ -48,7 +52,7 @@ You now have the first two pieces of information you need to answer the Botscaff
 
 ![Enter AppID and Password](assets/Botscaffold-1.png)
 
-Back on the **Tell us about your bot** page at dev.botframework.com, you can set up Analytics for your bot via Azure Application Insights. See [this document](https://docs.microsoft.com/en-us/bot-framework/portal-analytics-overview#enable-analytics) for details. If you enabled Application Insights during creation of your Web App, the AppInsights service has been set up for your bot already, and you can find your AppInsights instrumentation key in the Azure portal. The **Instrumentation Key** is located under the Essentials section on the Overview tab:
+Back on the **Tell us about your bot** page at dev.botframework.com, you can set up Analytics for your bot via Azure Application Insights. See [this document](https://docs.microsoft.com/en-us/bot-framework/portal-analytics-overview#enable-analytics) for details. If you enabled Application Insights during creation of your Web App, the AppInsights service has been set up for your bot already, and your AppInsights instrumentation key is displayed under the Configuration settings for your bot. Copy this and paste it into the Generator. 
 
 ![AppInsights Key](assets/AppInsights-1.png)
 
@@ -88,7 +92,7 @@ When you're happy with your Intents and the test results, select **Publish** fro
 
 ![Create Intents](assets/LUISPublish-1.png)
 
-After choosing whether you want verbose logging, to use Bing search, and the timezone you'd like associated with your model, press the Publish button. Once you model is verified and published, you can copy the **Endpoint URL** and enter it into the Botscaffold generator. 
+After choosing whether you want verbose logging, to use Bing spell check, and the timezone you'd like associated with your model, press the Publish button. Once you model is verified and published, you can copy the **Endpoint URL** and enter it into the Botscaffold generator. 
 
 ### Enter your LUIS embed code ###
 
